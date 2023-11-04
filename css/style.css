@@ -1466,7 +1466,7 @@ support for no js
 /* #FEATURES 10 CAR #NEW
 =====================================================*/
 .fes10-container{
-  padding: 100px 100px 70px 100px;
+  padding: 40px 100px 0px 100px;
 	margin-right: auto;
 	margin-left: auto;
 	position:relative;
@@ -1475,7 +1475,7 @@ support for no js
 
 @media (max-width: 767px) {
   .fes10-container {
-    padding: 80px 20px 50px 20px;
+    padding: 40px 20px 0px 20px;
   }
 }
 
@@ -2346,7 +2346,6 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
 .post-prev-info{
   margin-bottom:14px;
   font-size: 13px;
-  text-transform: uppercase;
 }
 .slash-divider{
   margin-right:7px;
