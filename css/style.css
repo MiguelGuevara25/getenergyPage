@@ -1099,7 +1099,7 @@ support for no js
 	margin-top:30px;
 }
 .fes2-img {
-  background: url(../images/fes2.jpg) 50% 50% no-repeat;
+  background: url(../images/foto11.png) 50% 50% no-repeat;
   
   width: 100%;
   display: block;	
@@ -2422,8 +2422,8 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
 }
 .blog2-post-title-cont .post-prev-title {
   padding:15px 0 15px 20px;
-  margin-left:120px;
-  border-left: #C9CACB 1px solid;
+  /* margin-left:120px; */
+  /* border-left: #C9CACB 1px solid; */
 }
 .blog2-post-title-cont {
   position:relative;
@@ -2454,7 +2454,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
     padding-left:0;
   }
   .blog2-post-title-cont .post-prev-title {
-    margin-left:70px;
+    /* margin-left:70px; */
   }
   .blog2-date-numb {
     font-size:30px;
