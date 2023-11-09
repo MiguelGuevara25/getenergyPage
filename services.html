@@ -42,8 +42,11 @@
               <div class="logo-container-2">
                 <div class="logo-2">
                   <a href="index.html" class="clearfix">
-                    <img src="images/Get Energy Blanco.png" style="width: 90px; height: auto; padding-top: 5px;"
-                      class="logo-img logo-color-change" alt="Logo" />
+                    <img src="images/Get Energy Logo II.png" class="logo-img transparent-logo"
+                      style="width: 90px; height: auto" alt="Logo Transparente" />
+
+                    <img src="images/Get Energy Blanco.png" class="logo-img black-logo" alt="Logo Negro"
+                      style="display: none; width: 90px; height: auto; padding-top: 5px;" />
                   </a>
                 </div>
               </div>
@@ -437,6 +440,26 @@
 
   </script>
 
+  <script>
+    $(document).ready(function () {
+      var $navbar = $('#nav'); // Reemplaza 'nav' con el ID de tu navbar
+      var $window = $(window);
+      var $transparentLogo = $('.transparent-logo');
+      var $blackLogo = $('.black-logo');
+
+      $window.on('scroll', function () {
+        if ($window.scrollTop() > 100) { // Cambiar a la versión del logo negro cuando el scroll es mayor de 100px
+          $transparentLogo.hide();
+          $blackLogo.show();
+          $navbar.addClass('black'); // También puedes agregar una clase al navbar para cambiar su estilo
+        } else { // Volver a la versión del logo transparente cuando el scroll es menor de 100px
+          $transparentLogo.show();
+          $blackLogo.hide();
+          $navbar.removeClass('black'); // Eliminar la clase para volver al estilo original
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -315,6 +315,27 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/contact-form-validation.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var $navbar = $('#nav'); // Reemplaza 'nav' con el ID de tu navbar
+            var $window = $(window);
+            var $transparentLogo = $('.transparent-logo');
+            var $blackLogo = $('.black-logo');
+
+            $window.on('scroll', function () {
+                if ($window.scrollTop() > 100) { // Cambiar a la versión del logo negro cuando el scroll es mayor de 100px
+                    $transparentLogo.hide();
+                    $blackLogo.show();
+                    $navbar.addClass('black'); // También puedes agregar una clase al navbar para cambiar su estilo
+                } else { // Volver a la versión del logo transparente cuando el scroll es menor de 100px
+                    $transparentLogo.show();
+                    $blackLogo.hide();
+                    $navbar.removeClass('black'); // Eliminar la clase para volver al estilo original
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
